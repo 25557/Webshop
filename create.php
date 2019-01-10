@@ -15,11 +15,11 @@ if (isset($_POST['submit'])) {
     $connection = new PDO($dsn, $username, $password, $options);
 
     $new_user = array(
+      "type" => $_POST['type'],
       "color" => $_POST['color'],
       "size"  => $_POST['size'],
       "text"     => $_POST['text'],
-      "quantity" => $_POST['quantity'],
-      "voornaam" => $_POST['voornaam']
+      "quantity" => $_POST['quantity']
 
     );
 
